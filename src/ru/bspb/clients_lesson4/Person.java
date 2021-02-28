@@ -1,11 +1,9 @@
 package ru.bspb.clients_lesson4;
-import ru.bspb.clients_lesson4.Gender;
+
 import java.util.Objects;
 
-import java.util.Comparator;
-
 public class Person extends Clients {
-     private Gender gender;
+    private Gender gender;
 
     public Person(String name, int age, Gender gender) {
         super(name, age);

@@ -34,17 +34,11 @@ public class Main {
 
         };
 
-
-
         Comparator<Person> comparator = new SortByAge();
 
         Arrays.sort(persons, comparator);
 
-
-
-
-      Function.DublleDel(persons);
-
+        Function.DublleDel(persons);
 
     }
 }

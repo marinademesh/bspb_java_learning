@@ -11,7 +11,6 @@ public abstract class Clients implements Comparator<Clients>{
         this.age = age;
     }
 
-
     public String getName() {
         return name;
     }
@@ -27,9 +26,5 @@ public abstract class Clients implements Comparator<Clients>{
     public void setAge(int age) {
         this.age = age;
     }
-
-
-
-
 
 }

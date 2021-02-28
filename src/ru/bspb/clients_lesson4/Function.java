@@ -4,7 +4,6 @@ public class Function {
 
   public static void DublleDel(Person[] persons) {
 
-
       Person[] output = new Person[persons.length];
       int couter = 0;
       for (Person person : persons) {
@@ -20,8 +19,6 @@ public class Function {
                   couter = couter + 1;
                   output[couter] = person;
                   System.out.println(person.getName() + ", " + person.getAge() + ", " + person.getGender());
-
-
               }
           }
       }
