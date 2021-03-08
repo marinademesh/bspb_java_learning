@@ -1,12 +1,11 @@
 package ru.bspb.clients_lesson4;
 
-import java.util.Comparator;
 
-public abstract class Clients implements Comparator<Clients>{
+public abstract class Client {
     private String name;
     private int age;
 
-    public Clients (String name, int age) {
+    public Client(String name, int age) {
         this.name = name;
         this.age = age;
     }

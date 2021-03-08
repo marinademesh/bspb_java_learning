@@ -1,8 +1,5 @@
 package ru.bspb.clients_lesson4;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -27,18 +24,18 @@ public class Main {
                 new Person("Конфеткина Анна Львовна", 67, Gender.FEMALE),
                 new Person("Львов Игорь Павлович", 33, Gender.MALE),
                 new Person("Джава Джав Джавович", 44, Gender.MALE),
-                new Person("Добрая Мария Павловна", 44, Gender.FEMALE),
+                new Person("Конфеткина Анна Львовна", 67, Gender.FEMALE),
                 new Person("Кусков Рафинад Сахарович", 99, Gender.MALE),
                 new Person("Шариков Шарик Шарикович", 27, Gender.MALE),
                 new Person("Бубликов Петр Сергеевич", 32, Gender.MALE)
 
         };
 
-        Comparator<Person> comparator = new SortByAge();
 
-        Arrays.sort(persons, comparator);
-
-        Function.DublleDel(persons);
+        UtilsPerson.sortbyage(persons);
+        UtilsPerson.filterByGender(persons);
+        Person [] withoutDublle = UtilsPerson.dublledel(persons);
+        UtilsPerson.print(withoutDublle);
 
     }
 }

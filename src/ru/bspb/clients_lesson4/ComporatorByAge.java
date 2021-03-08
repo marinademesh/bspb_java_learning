@@ -2,10 +2,10 @@ package ru.bspb.clients_lesson4;
 
 import java.util.Comparator;
 
-public class SortByAge implements Comparator<Person> {
+public class ComporatorByAge implements Comparator<Client> {
 
     @Override
-    public int compare(Person o1, Person o2) {
+    public int compare(Client o1, Client o2) {
         return o1.getAge()-o2.getAge();
     }
 }

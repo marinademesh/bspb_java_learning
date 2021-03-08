@@ -1,8 +1,9 @@
 package ru.bspb.clients_lesson4;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Person extends Clients {
+public class Person extends Client {
     private Gender gender;
 
     public Person(String name, int age, Gender gender) {
@@ -19,9 +20,9 @@ public class Person extends Clients {
     }
 
     @Override
-    public String toString() {
-        return getName()+ " " + getAge()+ " " + getGender()+'\n';
-    }
+   public String toString() {
+        return getName()+ " " + getAge()+ " " + getGender();
+   }
 
     @Override
     public boolean equals(Object o) {
@@ -36,9 +37,6 @@ public class Person extends Clients {
         return Objects.hash(gender);
     }
 
-    @Override
-    public int compare(Clients o1, Clients o2) {
-        return 0;
-    }
+
 }
 

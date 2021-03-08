@@ -1,6 +1,6 @@
 package ru.bspb.clients_lesson4;
 
-public class SelfEmployer extends Clients {
+public class SelfEmployer extends Client {
 
     private String ogrn;
 
@@ -18,8 +18,4 @@ public class SelfEmployer extends Clients {
     }
 
 
-    @Override
-    public int compare(Clients o1, Clients o2) {
-        return 0;
-    }
 }

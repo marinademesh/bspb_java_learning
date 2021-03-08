@@ -2,12 +2,12 @@ package ru.bspb.clients_lesson3;
 
 import java.util.Objects;
 
-public class Client {
+public class ClientFL {
     private String name;
     private int age;
     private String gender;
 
-    public Client(String name, int age, String gender) {
+    public ClientFL(String name, int age, String gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -37,8 +37,8 @@ public class Client {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Client client = (Client) o;
-        return age == client.age && gender == client.gender && name.equals(client.name);
+        ClientFL clientFL = (ClientFL) o;
+        return age == clientFL.age && gender == clientFL.gender && name.equals(clientFL.name);
     }
 
     @Override
