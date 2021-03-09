@@ -34,6 +34,7 @@ public class Main {
 
         UtilsPerson.sortbyage(persons);
         UtilsPerson.filterByGender(persons);
+        persons = UtilsPerson.filterByGender(persons);
         Person [] withoutDublle = UtilsPerson.dublledel(persons);
         UtilsPerson.print(withoutDublle);
 
