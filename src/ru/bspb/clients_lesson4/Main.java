@@ -36,7 +36,8 @@ public class Main {
         UtilsPerson.filterByGender(persons);
         persons = UtilsPerson.filterByGender(persons);
         persons = UtilsPerson.dublledel(persons);
-      //  Person [] withoutDublle = UtilsPerson.dublledel(persons);
+         //Person [] withoutDublle = UtilsPerson.dublledel(persons);
+        // UtilsPerson.print(withoutDublle);
         UtilsPerson.print(persons);
 
     }
