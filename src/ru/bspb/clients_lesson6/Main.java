@@ -20,7 +20,7 @@ public class Main {
         pl.add(new Person("Кусков Рафинад Сахарович", 99, Gender.MALE));
         pl.add(new Person("Шариков Шарик Шарикович", 27, Gender.MALE));
         pl.add(new Person("Бубликов Петр Сергеевич", 32, Gender.MALE));
-        Collections.sort(pl); // Сортируем по возрастанию
+        Collections.sort(pl);// Сортируем по возрастанию предварительно в классе Person мы переопределили compare: public int compareTo(Person o) {return this.getAge()-o.getAge(); }
 
         //  ** Проверяем вывод, что Клиенты отсортированы по возрастанию:
         //  Iterator <Person> iterator = pl.iterator();
@@ -52,7 +52,7 @@ public class Main {
         //        else System.out.println(tmp2);
         //     }
 
-        // Сначала Удаляем мужчин, а потом печатаем итог
+        // Сначала Удаляем женщин, а потом печатаем итог
         Iterator<Person> iterator = pl2.iterator();
         while (iterator.hasNext()) {
             Person tmp2 = iterator.next();
