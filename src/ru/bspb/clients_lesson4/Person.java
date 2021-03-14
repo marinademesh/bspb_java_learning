@@ -3,7 +3,7 @@ package ru.bspb.clients_lesson4;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Person extends Client {
+public class Person extends Client implements Comparable <Person> {
     private Gender gender;
 
     public Person(String name, int age, Gender gender) {
@@ -37,6 +37,12 @@ public class Person extends Client {
         return Objects.hash(gender);
     }
 
+        @Override
+        public int compareTo(Person o) {
+            return this.getAge()-o.getAge();
+        }
+
 
 }
+
 
