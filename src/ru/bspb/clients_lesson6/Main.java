@@ -42,31 +42,14 @@ public class Main {
         ArrayList<Person> pl2 = new ArrayList<>(); //Записываем Клиентов обратнов в Arraylist
         pl2.addAll(pl1);
 
-        // Удаляем всех женщин и печатаем итог
-        //   Iterator <Person> iterator = pl2.iterator();
-        //    while (iterator.hasNext()) {
-        //      Person tmp2= iterator.next();
-        //     if (tmp2.getGender() == Gender.FEMALE) {
-        //         pl2.remove(tmp2);
-        //   }
-        //        else System.out.println(tmp2);
-        //     }
-
-        // Сначала Удаляем женщин, а потом печатаем итог
-        Iterator<Person> iterator = pl2.iterator();
-        while (iterator.hasNext()) {
-            Person tmp2 = iterator.next();
+        ///Удаляем всех женщин и печатаем итог
+          Iterator <Person> iterator = pl2.iterator();
+          while (iterator.hasNext()) {
+             Person tmp2= iterator.next();
             if (tmp2.getGender() == Gender.FEMALE) {
-                pl2.remove(tmp2);
-            };
-
-        ArrayList <Person> pl3 = new ArrayList<>();
-           pl3.addAll(pl2);
-            Iterator <Person> iterator3 = pl3.iterator();
-            while (iterator.hasNext()) {
-                 Person tmp3 = iterator.next();
-               System.out.println(tmp3);
-              }
-        }
+              pl2.remove(tmp2);
+          }
+                else System.out.println(tmp2);
+           }
     }
 }
