@@ -17,7 +17,7 @@ public class Main {
         pl.add(new Person("Львов Игорь Павлович", 33, Gender.MALE));
         pl.add(new Person("Джава Джав Джавович", 44, Gender.MALE));
         pl.add(new Person("Конфеткина Анна Львовна", 67, Gender.FEMALE));
-        pl.add(new Person("Кусков Рафинад Сахарович", 99, Gender.MALE));
+        pl.add(new Person("Кусков Рафинад Сахарович", 88, Gender.MALE));
         pl.add(new Person("Шариков Шарик Шарикович", 27, Gender.MALE));
         pl.add(new Person("Бубликов Петр Сергеевич", 32, Gender.MALE));
         Collections.sort(pl);// Сортируем по возрастанию предварительно в классе Person мы переопределили compare: public int compareTo(Person o) {return this.getAge()-o.getAge(); }
@@ -42,7 +42,7 @@ public class Main {
         ArrayList<Person> pl2 = new ArrayList<>(); //Записываем Клиентов обратнов в Arraylist
         pl2.addAll(pl1);
 
-        ///Удаляем всех женщин и печатаем итог
+        ///Удаляем всех женщин и печатаем мужчин
           Iterator <Person> iterator = pl2.iterator();
           while (iterator.hasNext()) {
              Person tmp2= iterator.next();
@@ -51,5 +51,6 @@ public class Main {
           }
                 else System.out.println(tmp2);
            }
+     //    System.out.println(pl2); //Почему, если мы распечатываем просто весь список без else - неправильный итог, есть женщина?
     }
 }
