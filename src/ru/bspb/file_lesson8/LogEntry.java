@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.stream.Collector;
 
 public class LogEntry {
-    private String timestamp;
-    private String level;
-    private String message;
+    public String timestamp;
+    public String level;
+    public String message;
 
     public LogEntry(String timestamp, String level, String message) {
         this.timestamp = timestamp;

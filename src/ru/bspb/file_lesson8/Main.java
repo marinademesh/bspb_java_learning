@@ -24,7 +24,6 @@ public class Main {
             ArrayList<LogEntry> logEntries = new ArrayList<>();
             List<String> lines = (Files.readAllLines(file)); //записали строки в лист
             //    System.out.println(Files.readAllLines(file)); посмотреть что мы считали из всех файлов строки
-            // System.out.println (lines);
             for (String line :
                     lines) {
                 String timestamp = line.substring(0, 24);
@@ -34,9 +33,11 @@ public class Main {
                // System.out.println (level);
                 String message = line.substring(k).trim();
               //  System.out.println (message);
-                String [] words = {timestamp,level,message};
+
+              //  String [] words = {timestamp,level,message};
                // System.out.println (words[0]);
-                logEntries.add(new LogEntry(words[0],words[1],words[2]));
+              //  logEntries.add(new LogEntry(words[0],words[1],words[2]));
+                logEntries.add(new LogEntry(timestamp,level,message));
             }
 
             System.out.println(logEntries);
